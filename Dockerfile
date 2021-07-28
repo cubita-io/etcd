@@ -4,7 +4,7 @@ RUN curl -L https://github.com/etcd-io/etcd/releases/download/v3.5.0/etcd-v3.5.0
     && tar -xzvf /tmp/etcd-v3.5.0-linux-amd64.tar.gz -C /software --strip-components=1 \
     && mv /software/etcd-v3.5.0-linux-amd64/etcd /usr/local/bin/etcd \
     && mv /software/etcd-v3.5.0-linux-amd64/etcdctl /usr/local/bin/etcdctl \
-    && mv /software/etcd-v3.5.0-linux-amd64/etcdutl /usr/local/bin/etcdutl
+    && mv /software/etcd-v3.5.0-linux-amd64/etcdutl /usr/local/bin/etcdutl \
     && rm -f /tmp/etcd-v3.5.0-linux-amd64.tar.gz
 
 RUN mkdir -p /var/etcd/
